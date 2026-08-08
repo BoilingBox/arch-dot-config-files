@@ -1,0 +1,53 @@
+{
+    "height": 30,
+    "margin-bottom": -5,
+    "modules-left": [
+        "clock"
+    ],
+    "modules-right": [
+	    "network",
+	    "pulseaudio",
+	    "custom/power"
+    ],
+    "modules-center": [
+	    "hyprland/windows",
+        "hyprland/workspaces",
+	    "cpu",
+	    "memory"
+    ],
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "America/Toronto",
+        "format": "{:%Y-%m-%d | %I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "RAM: {}%"
+    },
+    "network": { 
+        "format-wifi": "WIFI ({signalStrength}%)  ",
+        "format-ethernet": "Ethernet  ",
+        "tooltip-format": "{ifname} via {gwaddr}  ",
+        "format-linked": "{ifname} (No IP)  ",
+        "format-disconnected": "Disconnected  ⚠",
+	    "on-click": "nm-connection-editor",
+	    "tooltip": false
+    },
+    "pulseaudio": {
+	    "format" : "{volume}%  󰕾 ",
+	    "format-muted": "Muted  󰝟 ",
+	    "tooltip": false,
+	    "on-click": "pavucontrol"
+    },
+    "custom/power": {
+	    "format": " 󰐥 ",
+	    "tooltip": false,
+	    "on-click": "wlogout"
+    }
+}
