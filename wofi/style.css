@@ -1,0 +1,34 @@
+window {
+	background-color: #240046;	
+}
+
+#outer-box {
+	background-color: #240046;
+}
+
+#input {
+	background-color: #10002B;
+	color: #E0AAFF;
+	font-size: 24px;
+}
+
+#text {
+	font-size: 18px;
+	color: #E0AAFF;
+}
+
+#text:selected{
+	color: #240046;
+	border-color: #7B2CBF;
+}
+
+#entry{
+	background-color: #10002B;
+	margin-top: 1px;
+	color: white;
+}
+
+#entry:selected{
+	background-color: #E0AAFF;
+	color: #10002B;
+}
